@@ -40,6 +40,12 @@
             background-color: #eede05;
             margin-right: 6px;
           }
+
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
         }
       }
     }
