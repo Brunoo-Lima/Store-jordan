@@ -22,6 +22,11 @@
         justify-content: center;
         align-items: center;
 
+        @media(max-width: 1100px) {
+          grid-template-columns: repeat(4,200px);
+          gap: 1rem;
+        }
+
         @media(max-width: 800px) {
           grid-template-columns: repeat(2,200px);
           gap: .8rem;
@@ -30,6 +35,10 @@
         li {
           background-color: #EBE9EA;
           padding: 3.125rem;
+
+          @media(max-width: 1200px) {
+            padding: 1.5rem;
+          }
 
           @media(max-width: 800px) {
             padding: 1.5rem;

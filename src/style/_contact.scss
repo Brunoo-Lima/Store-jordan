@@ -13,23 +13,40 @@
     grid-template-columns: repeat(2,510px);
     gap: 40px;
 
+    @media(max-width: 1100px) {
+      grid-template-columns: repeat(2,430px);
+      gap: 50px;
+    }
+
+    @media(max-width: 1050px) {
+      grid-template-columns: 100px;
+    }
+
     @media(max-width: 800px) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 100px;
     }
 
     .maps {
       grid-column: 1;
 
       @media(max-width: 800px) {
-        grid-column: 2/4;
+        grid-column: 1/2;
       }
 
       img {
         max-width: fit-content;
         max-height: 700px;
 
+        @media(max-width: 1000px) {
+          max-height: 600px;
+        }
+
         @media(max-width: 800px) {
-          max-height: 500px;
+          max-height: 700px;
+        }
+
+        @media(max-width: 600px) {
+          max-height: 550px;
         }
       }
     }
@@ -37,6 +54,10 @@
     .contact-details {
       grid-column: 2/3;
       align-self: center;
+
+      @media(max-width: 1100px) {
+        grid-column: 3/1;
+      }
 
       ul {  
         li {
