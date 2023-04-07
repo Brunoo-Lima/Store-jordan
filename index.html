@@ -32,10 +32,16 @@
 
   <section class="introduce-bg" id="home">
     <div class="container introduce">
-      <h1 class="t-big">A melhor loja de Jordan</h1>
-      <p class="p-bold">
-        O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.
-      </p>
+      <div>
+        <h1 class="t-big">A melhor loja de Jordan</h1>
+        <p id="typed"></p>
+      </div>
+
+      <div id="typed-strings">
+        <p class="p-bold">
+          O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -61,7 +67,7 @@
   <section class="contact-bg" id="contact">
     <div class="container contact">
       <h1 class="t-big">Contatos</h1>
-      
+
       <div class="contacts">
       <div class="maps">
         <img src="./src/image/mapa.png" width="1200" height="1600" alt="localizaçao">
@@ -69,11 +75,11 @@
 
         <div class="contact-details">
           <ul>
-            <li><a href="mailto@gmail.com">storeshoes@gmail.com</a></li>
-            <li>+55 (21) 9999-9999</li>
-            <li>Rua da loja, nº 20</li>
-            <li>São Paulo - SP</li>
-            <li data-semana="1,2,3,4,5" 
+            <li class="p-small"><a href="mailto@gmail.com">storeshoes@gmail.com</a></li>
+            <li class="p-small">+55 (21) 9999-9999</li>
+            <li class="p-small">Rua da loja, nº 20</li>
+            <li class="p-small">São Paulo - SP</li>
+            <li class="p-small" data-semana="1,2,3,4,5" 
             data-horario="8,18">Seg à Sex das 8 às 18</li>
           </ul>
         </div>
@@ -86,6 +92,16 @@
       <p class="p-small">Site desenvolvido por <strong>Bruno Lima</strong></p>
     </div>
   </footer>
+
+  <script type="module" src="./src/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    let typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 30
+    });
+  </script>
   
 </body>
 </html>
