@@ -33,6 +33,10 @@
         grid-column: 1/2;
       }
 
+      @media(max-width: 400px) {
+        grid-column: 1;
+      }
+
       img {
         max-width: fit-content;
         max-height: 700px;
@@ -47,6 +51,10 @@
 
         @media(max-width: 600px) {
           max-height: 550px;
+        }
+
+        @media(max-width: 400px) {
+          max-height: 400px;
         }
       }
     }

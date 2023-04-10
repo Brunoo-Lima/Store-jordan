@@ -32,6 +32,10 @@
           gap: .8rem;
         }
 
+        @media(max-width: 400px) {
+          grid-template-columns: 200px;
+        }
+
         li {
           background-color: #EBE9EA;
           padding: 3.125rem;
